@@ -21,7 +21,7 @@ This project was created for the challenge on hackerearth for ECS. This is the f
 
 # Users Table:
 ```bash
-aws dynamodb create-table --table-name users --attribute-definitions AttributeName=user_id,AttributeType=S --key-schema AttributeName=user_id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint_url http://localhost:8000
+aws dynamodb create-table --table-name users --attribute-definitions AttributeName=user_id,AttributeType=S --key-schema AttributeName=user_id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint-url http://localhost:8000
 ```
 
 # Test
