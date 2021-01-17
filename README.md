@@ -20,12 +20,14 @@ This project was created for the challenge on hackerearth for ECS. This is the f
   - Create frontend for API - I will implement in future if I find some time.
 
 # Users Table:
-``aws dynamodb create-table --table-name users --attribute-definitions AttributeName=user_id,AttributeType=S --key-schema AttributeName=user_id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint_url http://localhost:8000``
+```bash
+aws dynamodb create-table --table-name users --attribute-definitions AttributeName=user_id,AttributeType=S --key-schema AttributeName=user_id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint_url http://localhost:8000
+```
 
 # Test
-``pytest -v -s``
+```pytest -v -s```
 
 # Run
-``python main.py``
+```python main.py```
 
 This has a lot of space for improvement. Off the bat I would want to make the API more RESTful, currently the endpoints are quite verbose and the operations should have been based on methods only. In some future, I would definitly improve the API. Also the response from API doesn't remove the dynamoDB elements of the type, which I would also change.
